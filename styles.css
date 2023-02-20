@@ -4,19 +4,19 @@
 html {
     width: 100%; height: auto;
     font-family: monospace, 'Courier New', Courier; font-size: 16px;}
+    
+    /* H */
+
 header, footer, main {
-    padding: 0 2rem 0 2rem;}
+    width: 100%; height:  auto;
+    display: flex; flex-direction: column; align-items: center;}
 header, footer {
     background-color: #1f2937;}
-header {
-    width: 100%; height:  auto;
-    display: flex; justify-content: center;
-    padding-top: 1rem;}
 .header-content {
     width: 1000px; height: auto;
-    display: flex; flex-direction: column;}
+    display: flex; flex-direction: column; justify-content: center;}
 .header-row1 {
-    display: flex; justify-content: space-between; align-items: center;}
+    display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
 .logo-name {
     display: flex; flex-direction: row; align-items: center;}
 .logo-name > img {
@@ -58,3 +58,46 @@ header {
     text-align: center;
     color: #1f2937;
     margin: 2rem;}
+
+    /* M */
+
+.info-container, .quote-container, .cta-container {
+    width: 100%; height:  auto;
+    display: flex; flex-direction: column; align-items: center;}
+.info-content, .quote-content, .cta-content {
+    width: 1000px; height: auto;}
+.info-content {
+    display: flex; flex-direction: column; align-items: center;
+    padding: 2rem 4rem 4rem 4rem;}
+.info-content h2 {
+    margin: 0 0 2rem 0;
+    font-size: 36px; color: #1f2937}
+.imagerow-container {
+    width: 100%; height: auto;
+    display: flex; flex-direction: row; justify-content: space-around;}
+.imagerow-column {
+    display: flex; flex-direction: column; align-items: center;
+    width: 175px;
+    text-align: center;}
+.imgbox {
+    width: 175px; height: 175px;
+    border: 4px solid #3882f6; border-radius: 20px;
+    margin: 0 0 1rem 0;
+    background-image: url("img/stripes-light.png");}
+.quote-container {
+    background-color: #e5ebeb;}
+.quote-content {
+    padding: 4rem 4rem 4rem 4rem;}
+.quote-content p {
+    font-size: 36px; font-style: italic; color: #1f2937;}
+.author {
+    float: right;
+    margin-right: 4rem;
+    font-size: 36px; font-weight: 800; color: #1f2937;}
+
+
+    /* F */
+
+.footer-content {
+    width: 1000px; height: auto;
+    display: flex; flex-direction: column; justify-content: center;}
