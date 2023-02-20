@@ -3,23 +3,30 @@
     margin: 0; padding: 0;}
 html {
     width: 100%; height: auto;
-    font-family: monospace, 'Courier New', Courier;}
-header {
-    width: 100%; height:  auto;
-    display: flex; justify-content: center;}
-header, footer {
-    background-color: #1f2937;}
+    font-family: monospace, 'Courier New', Courier; font-size: 16px;}
 header, footer, main {
     padding: 0 2rem 0 2rem;}
+header, footer {
+    background-color: #1f2937;}
+header {
+    width: 100%; height:  auto;
+    display: flex; justify-content: center;
+    padding-top: 1rem;}
 .header-content {
     width: 1000px; height: auto;
     display: flex; flex-direction: column;}
 .header-row1 {
     display: flex; justify-content: space-between; align-items: center;}
-.header-row1 > img {
-    height: 32px;}
+.logo-name {
+    display: flex; flex-direction: row; align-items: center;}
+.logo-name > img {
+    height: 32px;
+    margin: 0 1rem 0 0;}
+.logo-name > p {
+    color: #e5e7eb; font-size: 24px;}
 .header-row1 > nav {
-    display: flex; align-items: center;}
+    display: flex; align-items: center;
+    font-size: 1rem;}
 .header-row1 > nav > a {
     color: #e5e7eb;
     padding: 1rem;
@@ -32,13 +39,22 @@ header, footer, main {
 .header-row2 > div {
     flex: 1;}
 .header-row2 > div > h1 {
-    color: #f9faf9; font-size: 2rem;
+    color: #f9faf9; font-size: 48px; font-weight: 900;
     margin: 0 0 1rem 0;}
 .header-row2 > div > p {
     color: #e5e7eb;
     margin: 0 0 1rem 0;}
 .header-row2 > div > button {
-    padding: 0.5rem 1rem 0.5rem 1rem;}
-.header-img {
-    border: 1px solid #e5e7eb;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    background-color: #3882f6;
+    color: #f9faf9; font-weight: 800;
+    border: none; border-radius: .5rem;}
+.header-row2 > .header-img {
+    color: #e5e7eb;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    background-image: url("img/stripes-light.png");
     margin: 0 0 0 2rem;}
+.header-row2 > .header-img > p {
+    text-align: center;
+    color: #1f2937;
+    margin: 2rem;}
